@@ -26,9 +26,9 @@ public class PhotoQuiz {
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address”)
-
+String imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR92J31Qy28Ip7d6wmpHTixDZAkkqSAqYbp3f-K2vuUOE-nfESZ";
 		// 2. create a variable of type "Component" that will hold your image
-
+Component c = createImage(imageUrl);
 		// 3. use the "createImage()" method below to initialize your Component
 
 		// 4. add the image to the quiz window
