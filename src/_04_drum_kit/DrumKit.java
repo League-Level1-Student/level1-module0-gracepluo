@@ -48,6 +48,7 @@ public class DrumKit implements MouseListener {
 		// 9. Edit the next line to use your String variable
 		drumLabelWithImage = createLabelImage(cymbal);
 		
+		
 		// 10. Add the image to the panel
 		panel.add(drumLabelWithImage);
 		// 11. Set the layout of the panel to "new GridLayout()"
