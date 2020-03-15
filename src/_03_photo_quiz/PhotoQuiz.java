@@ -39,7 +39,7 @@ quizWindow.pack();
 String input = JOptionPane.showInputDialog("what is this bird");
 		// 7. print "CORRECT" if the user gave the right answer
 if(input.equalsIgnoreCase("Raven")) {
-	System.out.println("Correct");
+	System.out.println("Correct");label.setIcon(loadImage());
 }
 		// 8. print "INCORRECT" if the answer is wrong
 else {
