@@ -75,6 +75,7 @@ public class DrumKit implements MouseListener {
 		JLabel drumClicked = (JLabel) e.getSource(); // This line gets the label
 														// that the mouse
 														// clicked on
+		
 		// 15. Download a drum sound and drop it into your "default package".
 		
 		// You can find it on freesound.org. To download it, log in as
