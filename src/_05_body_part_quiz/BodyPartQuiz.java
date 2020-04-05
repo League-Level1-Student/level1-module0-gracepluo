@@ -59,7 +59,7 @@ public class BodyPartQuiz {
 
 		// 5. Check their answer. If they guessed correctly:
 		// -- Tell them they are right and increase the score by 1
-		if (guess == ("Arnold")){
+		if (guess.equals ("Arnold")){
 			score++;
 			System.out.println("right");
 		}
@@ -75,7 +75,7 @@ public class BodyPartQuiz {
 
 		// 8. .... repeat 4-7 for all your images.....
 		String guess1 = JOptionPane.showInputDialog("who is this?");
-		if (guess1 == ("Leo")){
+		if (guess1.equals ("Leo")){
 			score++;
 			System.out.println("right");
 		}
