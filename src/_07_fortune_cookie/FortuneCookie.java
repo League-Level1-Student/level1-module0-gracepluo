@@ -18,7 +18,7 @@ public class FortuneCookie implements ActionListener{
             	    button.addActionListener(this);
             	    int rand = new Random().nextInt(5);
             	    frame.setVisible(true);
-            	    if button.
+            	 
                 System.out.println("Button clicked");
                 if (rand == 1){
             System.out.println("Fortune one");
