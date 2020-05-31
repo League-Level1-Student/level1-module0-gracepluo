@@ -14,12 +14,18 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 public class num8 implements ActionListener {
+	 JButton button = new JButton();
+	 JFrame frame = new JFrame();
+		JLabel Jack = createLabelImage("jackInTheBox.png");
+		int count = 0;
+		
 	private void showPicture(String fileName) { 
 	      try {
 	           JLabel imageLabel = createLabelImage(fileName);
 	           JFrame frame = new JFrame();
 	           frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	           frame.add(imageLabel);
+	           
 	           frame.setVisible(true);
 	           frame.pack();
 	      } catch (Exception e) {
@@ -56,8 +62,6 @@ public class num8 implements ActionListener {
 
 
 	 public void showButton() {
-	JFrame frame = new JFrame();
-	  JButton button = new JButton();
 	    frame.add(button);
 	    frame.pack();
 	    button.addActionListener(this);
@@ -70,6 +74,17 @@ public class num8 implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
 		// TODO Auto-generated method stub
+		
+		if (arg0.getSource() == button){
+			count++;
+			System.out.println(count);
+		}
+		if (count == 5) {
+			frame.add(Jack);
+            frame.pack();  		 
+			Jack.setVisible(true);
+			count = 0;
+		}
 		
 	}	
 }
