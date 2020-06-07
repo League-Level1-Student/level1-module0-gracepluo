@@ -83,7 +83,7 @@ public class num8 implements ActionListener {
 			frame.add(Jack);
             frame.pack();  		 
 			Jack.setVisible(true);
-			count = 0;
+
 		}
 		
 	}	
